@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>نمونهٔ قالب تخته‌گچی</title>
+  <style>
+    /* These paths are relative to templates/. Adjust them when copying the template. */
+    @font-face { font-family: Vazirmatn; src: url('../assets/fonts/Vazirmatn[wght].ttf') format('truetype'); font-weight: 100 900; font-display: block; }
+    @font-face { font-family: 'Aref Ruqaa'; src: url('../assets/fonts/ArefRuqaa-Regular.ttf') format('truetype'); font-weight: 400; font-display: block; }
+    @font-face { font-family: 'Aref Ruqaa'; src: url('../assets/fonts/ArefRuqaa-Bold.ttf') format('truetype'); font-weight: 700; font-display: block; }
+    @font-face { font-family: Caveat; src: url('../assets/fonts/Caveat[wght].ttf') format('truetype'); font-weight: 400 700; font-display: block; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; }
+    body { display: grid; place-items: center; background: #131b18; }
+    .board { position: relative; isolation: isolate; overflow: hidden; width: min(100vw, 56.25vh); aspect-ratio: 9 / 16; container-type: inline-size; color: #f4f1e8; background: radial-gradient(ellipse at 48% 37%, #35473f 0%, #2b3a35 48%, #1b2622 100%); }
+    .board::before { content: ''; position: absolute; inset: 0; z-index: -1; opacity: .13; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' seed='7'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E"); }
+    .content { position: absolute; inset: 18% 13% 25%; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .eyebrow { font: 500 3.4cqw/1.5 Vazirmatn, Tahoma, sans-serif; color: #b8f0d8; margin: 0 0 2cqw; }
+    h1 { font: 700 11cqw/1.45 'Aref Ruqaa', Vazirmatn, Tahoma, sans-serif; margin: 0; }
+    .subtitle { font: 400 4.2cqw/1.9 Vazirmatn, Tahoma, sans-serif; margin: 3cqw 0 0; color: #f4f1e8; }
+    .handle { font: 600 5.2cqw/1.2 Caveat, sans-serif; color: #ffb3c9; margin: 5cqw 0 0; unicode-bidi: isolate; }
+    .chalk { filter: url(#chalk); }
+    .d { fill: none; stroke: #f4f1e8; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw var(--len, 1.5s) ease-out var(--d, 0s) both; }
+    .p { stroke: #ffb3c9; } .g { stroke: #ffe49a; } .m { stroke: #b8f0d8; }
+    .t { animation: write var(--len, 1.2s) ease-out var(--d, 0s) both; }
+    .ltr { animation-name: write-ltr; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes write { from { clip-path: inset(0 0 0 100%); } to { clip-path: inset(0); } }
+    @keyframes write-ltr { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0); } }
+    .motif { width: 26cqw; height: 30cqw; margin-bottom: 3cqw; overflow: visible; }
+    .underline { width: 55cqw; height: 4cqw; margin-top: 1cqw; overflow: visible; }
+    .frame { position: absolute; inset: 13% 8% 22%; width: 84%; height: 65%; overflow: visible; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <main class="board" aria-label="نمونهٔ قالب تخته‌گچی">
+    <svg width="0" height="0" aria-hidden="true" style="position:absolute">
+      <filter id="chalk" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="4" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </svg>
+    <svg class="frame chalk" viewBox="0 0 840 1248" preserveAspectRatio="none" aria-hidden="true">
+      <path class="d" style="--d:.2s;--len:2.6s" pathLength="1" d="M75 8 Q20 8 18 65 L14 1168 Q17 1230 75 1235 L755 1239 Q816 1235 821 1174 L825 70 Q822 13 759 9 Z"/>
+      <path class="d g" style="--d:1s" pathLength="1" d="M58 90 l0 35 m-17 -18 l34 0 M780 1080 l0 35 m-17 -18 l34 0"/>
+    </svg>
+    <section class="content">
+      <svg class="motif chalk" viewBox="0 0 160 180" aria-hidden="true">
+        <path class="d p" style="--d:1s;--len:1.8s" pathLength="1" d="M58 46 L58 27 Q58 20 64 20 L96 20 Q102 20 102 27 L102 46 M53 50 Q38 56 36 70 L30 145 Q29 160 44 162 L116 162 Q131 160 130 145 L124 70 Q122 56 107 50 Z"/>
+        <path class="d" style="--d:1.6s" pathLength="1" d="M54 113 Q80 95 106 113 M61 124 Q80 112 99 124"/>
+        <path class="d g" style="--d:2s" pathLength="1" d="M18 26 L18 48 M7 37 L29 37 M140 68 L140 88 M130 78 L150 78"/>
+      </svg>
+      <p class="eyebrow t chalk" style="--d:2s">قالب آزمایشی</p>
+      <h1 class="t chalk" style="--d:2.6s;--len:1.8s">تخته‌گچی</h1>
+      <svg class="underline chalk" viewBox="0 0 220 16" aria-hidden="true"><path class="d p" style="--d:3.2s" pathLength="1" d="M5 9 Q108 0 215 8"/></svg>
+      <p class="subtitle t chalk" style="--d:3.8s">نمونهٔ نمایش فارسی و گچ</p>
+      <p class="handle t ltr chalk" dir="ltr" style="--d:4.4s">@ayda.nailroom</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ایدا نیل‌روم — post-1</title>
+<style>
+  @font-face { font-family: Vazirmatn; src: url('../../assets/fonts/Vazirmatn[wght].ttf') format('truetype'); font-weight: 100 900; font-display: block; }
+  @font-face { font-family: 'Aref Ruqaa'; src: url('../../assets/fonts/ArefRuqaa-Regular.ttf') format('truetype'); font-weight: 400; font-display: block; }
+  @font-face { font-family: Caveat; src: url('../../assets/fonts/Caveat[wght].ttf') format('truetype'); font-weight: 400 700; font-display: block; }
+  * { box-sizing: border-box; }
+  html, body { width:100%; height:100%; margin:0; }
+  body { display:grid; place-items:center; background:#131b18; }
+  .board { position:relative; isolation:isolate; overflow:hidden; width:min(100vw, 56.25vh); aspect-ratio:9/16; container-type:inline-size; background:radial-gradient(ellipse at 48% 40%, #34453d, #2b3a35 46%, #1b2622 100%); color:#f4f1e8; }
+  .board::before { content:''; position:absolute; inset:0; z-index:-1; opacity:.16; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' seed='7'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.4'/%3E%3C/svg%3E"); }
+  .photo-window { position:absolute; top:27.5%; left:5%; width:90%; aspect-ratio:1600/1374; overflow:hidden; border-radius:3cqw; }
+  .photo { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; transform-origin:center; }
+  .photo.first { animation:slot-one 15.5s linear both; }
+  .photo.second { animation:slot-two 15.5s linear both; }
+  /* All percentage values are absolute seconds divided by 15.5. */
+  @keyframes slot-one {
+    0%, .748% {opacity:0; filter:blur(0); transform:scale(1)}
+    5.161%, 42.697% {opacity:1; filter:blur(0); transform:scale(1)}
+    45.69%, 100% {opacity:0; filter:blur(7px); transform:scale(1.04)}
+  }
+  @keyframes slot-two {
+    0%, 42.697% {opacity:0; filter:blur(7px); transform:scale(1.04)}
+    45.69%, 71.31% {opacity:1; filter:blur(0); transform:scale(1.04)}
+    74.006%, 100% {opacity:0; filter:blur(0); transform:scale(1.04)}
+  }
+  .frame { position:absolute; top:26.5%; left:3.2%; width:93.6%; height:45%; pointer-events:none; overflow:visible; animation: frame-life 15.5s linear both; }
+  .chalk { filter:url(#chalk); }
+  .d { fill:none; stroke:#f4f1e8; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:1; stroke-dashoffset:1; animation:draw 1.5s ease-out .116s both; }
+  .pink { stroke:#ffb3c9; } .gold { stroke:#ffe49a; }
+  @keyframes draw { to {stroke-dashoffset:0} }
+  @keyframes frame-life { 0%,.748%{opacity:0} 5.161%,71.31%{opacity:1} 74.006%,100%{opacity:0} }
+  .signature { position:absolute; top:74%; left:0; width:100%; text-align:center; animation:frame-life 15.5s linear both; }
+  .name { margin:0; color:#f4f1e8; font:400 5.7cqw/1.5 'Aref Ruqaa',Vazirmatn,Tahoma,sans-serif; }
+  .small-handle { margin:0; color:#ffb3c9; font:500 3.4cqw/1.2 Caveat,sans-serif; unicode-bidi:isolate; }
+  .outro { position:absolute; top:41%; left:0; width:100%; text-align:center; animation:outro 15.5s linear both; }
+  .instagram { display:block; width:10cqw; height:10cqw; margin:0 auto 2.5cqw; }
+  .outro-handle { color:#f4f1e8; font:600 5cqw/1.3 Caveat,sans-serif; margin:0; unicode-bidi:isolate; }
+  @keyframes outro { 0%,76.703%{opacity:0} 79.606%,100%{opacity:1} }
+</style>
+</head>
+<body>
+<main class="board" aria-label="ایدا نیل‌روم">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="chalk" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" seed="4" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="1.2" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+  <div class="photo-window">
+    <img class="photo first" src="media/01.jpg" alt="نمونهٔ ناخن فرنچ">
+    <img class="photo second" src="media/01.jpg" alt="">
+  </div>
+  <svg class="frame chalk" viewBox="0 0 1000 864" preserveAspectRatio="none" aria-hidden="true">
+    <path class="d" pathLength="1" d="M18 56 Q17 20 55 17 L943 16 Q979 17 982 56 L984 806 Q982 846 944 847 L56 847 Q18 844 17 806 Z"/>
+    <path class="d pink" pathLength="1" d="M45 48 L95 47 M906 818 L954 817"/>
+    <path class="d gold" pathLength="1" d="M24 -14 L24 14 M10 0 L38 0 M977 852 L977 880 M963 866 L991 866"/>
+  </svg>
+  <div class="signature chalk"><p class="name">ایدا نیل‌روم</p><p class="small-handle" dir="ltr">@ayda.nailroom</p></div>
+  <div class="outro chalk" dir="ltr">
+    <svg class="instagram" viewBox="0 0 100 100" aria-hidden="true"><rect x="12" y="12" width="76" height="76" rx="22" fill="none" stroke="#ffb3c9" stroke-width="5"/><circle cx="50" cy="50" r="19" fill="none" stroke="#f4f1e8" stroke-width="5"/><circle cx="73" cy="27" r="4" fill="#ffe49a"/></svg>
+    <p class="outro-handle">@ayda.nailroom</p>
+  </div>
+</main>
+</body>
+</html>

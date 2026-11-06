@@ -1,0 +1,8 @@
+{
+  "meta": {"title": "post-1", "duration": 15.5, "fps": 30, "audio": null},
+  "scenes": [
+    {"id":"photo-1", "start":0.116, "end":7.082, "layout":"photo", "items":[{"type":"photo", "src":"media/01.jpg", "at":0.116, "enter":{"type":"fade", "dur":0.684}, "hold":5.818, "exit":{"type":"blur fade", "at":6.618, "dur":0.464}}]},
+    {"id":"photo-2", "start":6.618, "end":11.471, "layout":"photo", "items":[{"type":"photo", "src":"media/01.jpg", "at":6.618, "enter":{"type":"blur fade", "dur":0.464}, "hold":3.971, "exit":{"type":"fade", "at":11.053, "dur":0.418}}]},
+    {"id":"outro", "start":11.889, "end":15.5, "layout":"logo", "items":[{"type":"logo", "at":11.889, "dur":0.45}]}
+  ]
+}

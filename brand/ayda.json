@@ -1,0 +1,9 @@
+{
+  "handle": "@ayda.nailroom",
+  "name": "ایدا نیل‌روم",
+  "city": "نقده",
+  "services": ["کاشت ناخن", "ژلیش", "فرنچ مینیاتوری"],
+  "cta": "رزرو از طریق دایرکت",
+  "faceless": true,
+  "palette": { "chalk": "#f4f1e8", "pink": "#ffb3c9", "gold": "#ffe49a", "mint": "#b8f0d8", "board1": "#2b3a35", "board2": "#1b2622" }
+}
