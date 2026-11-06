@@ -1,0 +1,9 @@
+{
+  "meta": {"title":"story-before-after", "duration":15.5, "fps":30, "audio":null, "beat_map":"beats.json"},
+  "scenes": [
+    {"id":"before", "start":0.116, "end":7.082, "layout":"photo", "items":[{"type":"photo","src":"media/01.jpg","at":0.116,"enter":{"type":"fade","dur":0.684},"hold":5.818,"exit":{"at":6.618,"type":"blur-fade","dur":0.464}},{"type":"write","text":"قبل","at":1.904,"dur":0.418}]},
+    {"id":"after", "start":6.618, "end":11.471, "layout":"photo", "items":[{"type":"photo","src":"media/02.jpg","at":6.618,"enter":{"type":"blur-fade","dur":0.464},"hold":3.971,"exit":{"at":11.053,"type":"fade","dur":0.418}},{"type":"write","text":"بعد","at":8.499,"dur":0.417}]},
+    {"id":"outro", "start":11.889, "end":15.5, "layout":"logo", "items":[{"type":"logo","at":11.889,"dur":0.45}]}
+  ],
+  "beat_accents": {"type":"chalk burst", "at":"every detected beat in beats.json", "duration":0.32}
+}
